@@ -1,0 +1,195 @@
+.body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+  background-size: 400% 400%;
+  animation: rainbowBg 8s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rainbowBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: #ff6b6b;
+  animation: confetti-fall 3s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.mainTitle {
+  font-size: 4rem;
+  color: #2d3436;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+.kevinName {
+  font-size: 6rem;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  animation: pulse 2s ease-in-out infinite;
+  margin: 20px 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.funnyMessage {
+  font-size: 1.5rem;
+  color: #2d3436;
+  margin: 30px 0;
+  line-height: 1.6;
+  background: linear-gradient(45deg, #ffeaa7, #fab1a0);
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px dashed #e17055;
+}
+
+.ageJoke {
+  font-size: 1.3rem;
+  color: #636e72;
+  margin: 25px 0;
+  font-style: italic;
+  background: rgba(116, 185, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #74b9ff;
+}
+
+.birthdayFacts {
+  text-align: left;
+  background: rgba(253, 203, 110, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 25px 0;
+}
+
+.birthdayFacts h3 {
+  color: #2d3436;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.birthdayFacts li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+.cakeButton {
+  background: linear-gradient(45deg, #fd79a8, #e84393);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cakeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.surpriseButton {
+  background: linear-gradient(45deg, #00b894, #00cec9) !important;
+}
+
+.hiddenSurprise {
+  font-size: 1.5rem;
+  color: #00b894;
+  margin: 20px 0;
+  animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.emojiRain {
+  position: fixed;
+  top: -50px;
+  font-size: 2rem;
+  animation: emoji-fall 4s linear infinite;
+  z-index: 1000;
+}
+
+@keyframes emoji-fall {
+  0% { transform: translateY(-100px); }
+  100% { transform: translateY(100vh); }
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #636e72;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+  
+  .kevinName {
+    font-size: 3.5rem;
+  }
+  
+  .funnyMessage {
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+}
