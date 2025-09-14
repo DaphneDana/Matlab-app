@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import styles from './frank-birthday.module.css';
 
-export default function FrankBirthdayPage() {
+export default function AmbroseBirthdayPage() {
   const [surpriseShown, setSurpriseShown] = useState(false);
 
   const createConfetti = () => {
@@ -49,12 +49,12 @@ export default function FrankBirthdayPage() {
     <div className={styles.body}>
       <div className={styles.container}>
         <h1 className={styles.mainTitle}>🎂 HAPPY BIRTHDAY 🎂</h1>
-        <div className={styles.frankName}>FRANK!</div>
+        <div className={styles.frankName}>AMBROSE!</div>
         
         <div className={styles.funnyMessage}>
-          🎉 Congratulations Frank! You&apos;ve successfully completed another year of being absolutely awesome! 🎉
+          🎉 Congratulations Ambrose! You&apos;ve successfully completed another year of being absolutely awesome! 🎉
           <br /><br />
-          Today we celebrate the legendary Frank - the person who makes every day brighter and every joke funnier! 
+          Today we celebrate the legendary Ambrose - the person who makes every day brighter and every joke funnier! 
         </div>
 
         <div className={styles.ageJoke}>
@@ -63,13 +63,13 @@ export default function FrankBirthdayPage() {
         </div>
 
         <div className={styles.birthdayFacts}>
-          <h3>🎯 Fun Frank Birthday Facts:</h3>
+          <h3>🎯 Fun Ambrose Birthday Facts:</h3>
           <ul>
-            <li>🎈 Frank&apos;s birthday is scientifically proven to make the world 23% more fun</li>
-            <li>🎪 Studies show that Frank&apos;s smile can power a small village for a week</li>
-            <li>🚀 NASA is considering using Frank&apos;s awesomeness as rocket fuel</li>
-            <li>🏆 Frank holds the unofficial world record for &quot;Most Likely to Make People Laugh&quot;</li>
-            <li>🎭 Frank&apos;s birthday is so epic, even calendars get excited when it approaches</li>
+            <li>🎈 Ambrose&apos;s birthday is scientifically proven to make the world 23% more fun</li>
+            <li>🎪 Studies show that Ambrose&apos;s smile can power a small village for a week</li>
+            <li>🚀 NASA is considering using Ambrose&apos;s awesomeness as rocket fuel</li>
+            <li>🏆 Ambrose holds the unofficial world record for &quot;Most Likely to Make People Laugh&quot;</li>
+            <li>🎭 Ambrose&apos;s birthday is so epic, even calendars get excited when it approaches</li>
           </ul>
         </div>
 
@@ -77,18 +77,18 @@ export default function FrankBirthdayPage() {
           className={`${styles.cakeButton} ${surpriseShown ? styles.surpriseButton : ''}`}
           onClick={showSurprise}
         >
-          {surpriseShown ? '🎊 HAPPY BIRTHDAY FRANK! 🎊' : '🎂 Click for Birthday Magic! 🎂'}
+          {surpriseShown ? '🎊 HAPPY BIRTHDAY AMBROSE! 🎊' : '🎂 Click for Birthday Magic! 🎂'}
         </button>
         
         {surpriseShown && (
           <div className={styles.hiddenSurprise}>
-            🎊 SURPRISE! Frank, you&apos;re not just getting older, you&apos;re getting BETTER! 
+            🎊 SURPRISE! Ambrose, you&apos;re not just getting older, you&apos;re getting BETTER! 
             Here&apos;s to another year of bad jokes, good times, and being the amazing person you are! 🎊
           </div>
         )}
 
         <div className={styles.footer}>
-          Made with ❤️ and lots of birthday joy for the one and only Frank!
+          Made with ❤️ and lots of birthday joy for the one and only Ambrose!
           <br />
           🎈 May your day be filled with cake, laughter, and zero calories! 🎈
         </div>
